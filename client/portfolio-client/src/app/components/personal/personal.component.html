@@ -1,0 +1,63 @@
+<section class="personal" id="about">
+
+  <p class="section-title">
+    En dehors du code
+  </p>
+
+  <div class="personal-text">
+
+    <p>
+      Je suis quelqu'un de curieux et j'aime apprendre et découvrir de nouvelles choses,
+      aussi bien dans le développement qu'en dehors. Je suis aussi quelqu'un de sociable,
+      ouvert et respectueux. J'aime rencontrer des gens, discuter et échanger avec eux.
+    </p>
+
+    <p>
+      En dehors du code, j'aime voyager, passer du temps dans la nature et faire de longues
+      balades avec Trulli. J'adore cuisiner et faire de la pâtisserie, tester de nouvelles
+      recettes et découvrir de nouvelles saveurs. Je m'intéresse aussi à l'œnologie et à
+      tout ce qui touche au vin. J'ai également un faible pour les plantes et la photographie,
+      et je prends souvent des photos un peu partout où je vais. Et quand je suis plus tranquille
+      à la maison, les jeux vidéo ne sont jamais très loin.
+    </p>
+
+    <p>
+      Je touche un peu à tout, j'essaie, je découvre… et je pense que c'est aussi ce côté
+      curieux qui m'a amené vers le développement.
+    </p>
+
+  </div>
+
+  <div class="photo-carousel">
+
+    <button
+      class="carousel-button"
+      (click)="previousPhotos()"
+      aria-label="Photo précédente"
+    >
+      ‹
+    </button>
+
+    <div class="carousel-photos">
+
+      @for (photo of visiblePhotos; track photo) {
+
+        <div class="carousel-photo">
+          <img [src]="photo" alt="">
+        </div>
+
+      }
+
+    </div>
+
+    <button
+      class="carousel-button"
+      (click)="nextPhotos()"
+      aria-label="Photo suivante"
+    >
+      ›
+    </button>
+
+  </div>
+
+</section>

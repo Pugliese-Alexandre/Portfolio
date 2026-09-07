@@ -1,0 +1,86 @@
+.contact {
+  width: 88%;
+  max-width: 1300px;
+
+  margin: auto;
+
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  border-top: 1px solid #d8d6cf;
+}
+
+.contact-content {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 100px;
+}
+
+.contact-text h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  font-size: 3rem;
+}
+
+.contact-text p {
+  max-width: 500px;
+
+  color: #666666;
+
+  line-height: 1.7;
+}
+
+
+/* Réseaux */
+.social-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-links a {
+  display: flex;
+  justify-content: space-between;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  color: #181818;
+
+  text-decoration: none;
+
+  border-bottom: 1px solid #d8d6cf;
+
+  font-size: 1.1rem;
+}
+
+.social-links a:first-child {
+  border-top: 1px solid #d8d6cf;
+}
+
+.social-links a:hover {
+  color: #6b705c;
+}
+
+
+/* Téléphone */
+@media (max-width: 600px) {
+
+  .contact {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .contact-content {
+    display: flex;
+    flex-direction: column;
+
+    gap: 35px;
+  }
+
+  .contact-text h2 {
+    font-size: 2.5rem;
+  }
+}

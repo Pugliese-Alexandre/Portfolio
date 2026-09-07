@@ -1,0 +1,125 @@
+.personal {
+  width: 88%;
+  max-width: 1300px;
+
+  margin: auto;
+
+  padding-top: 100px;
+  padding-bottom: 120px;
+
+  border-top: 1px solid #d8d6cf;
+}
+
+.personal-text {
+  max-width: 650px;
+
+  margin-top: 0;
+  margin-bottom: 50px;
+
+  color: #666666;
+
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+
+/* Carrousel */
+.photo-carousel {
+  max-width: 850px;
+
+  margin: 35px auto 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 12px;
+}
+
+.carousel-photos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+}
+
+.carousel-photo {
+  width: 140px;
+  height: 185px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-photo img {
+  width: 140px;
+  height: 185px;
+
+  display: block;
+
+  border-radius: 6px;
+
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+.carousel-button {
+  border: none;
+  background: none;
+
+  font-size: 28px;
+
+  cursor: pointer;
+
+  color: #181818;
+
+  padding: 8px;
+}
+
+.carousel-button:hover {
+  color: #6b705c;
+}
+
+
+/* Téléphone */
+@media (max-width: 600px) {
+
+  .personal {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .personal-text {
+    width: 100%;
+
+    font-size: 0.95rem;
+    line-height: 1.65;
+  }
+
+  .photo-carousel {
+    width: 100%;
+
+    gap: 8px;
+  }
+
+  .carousel-photos {
+    gap: 5px;
+  }
+
+  .carousel-photo {
+    width: 85px;
+    height: 115px;
+  }
+
+  .carousel-photo img {
+    width: 85px;
+    height: 115px;
+  }
+
+  .carousel-button {
+    font-size: 24px;
+
+    padding: 4px;
+  }
+}

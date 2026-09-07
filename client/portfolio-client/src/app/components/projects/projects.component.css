@@ -1,0 +1,231 @@
+.projects {
+  width: 88%;
+  max-width: 1300px;
+
+  margin: auto;
+
+  padding-top: 100px;
+  padding-bottom: 120px;
+
+  border-top: 1px solid #d8d6cf;
+}
+
+.projects h2 {
+  max-width: 850px;
+
+  margin-top: 0;
+  margin-bottom: 50px;
+
+  font-size: 2.2rem;
+}
+
+
+/* Liste des projets */
+.projects-list {
+  display: flex;
+
+  gap: 25px;
+}
+
+
+/* Une carte projet */
+.project-card {
+  width: 33%;
+}
+
+
+/* Zone image */
+.project-image {
+  height: 160px;
+
+  background-color: #ebeae5;
+
+  border-radius: 5px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+
+  display: block;
+}
+
+
+/* Agrandissement du screenshot au hover */
+.project-image:hover img {
+  position: fixed;
+
+  width: 900px;
+  height: auto;
+
+  max-width: 80%;
+  max-height: 80%;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  z-index: 1000;
+
+  border-radius: 6px;
+
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.25);
+}
+
+
+/* Fond légèrement assombri derrière */
+.project-image::before {
+  content: "";
+
+  position: fixed;
+
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.22);
+
+  opacity: 0;
+
+  pointer-events: none;
+
+  transition: opacity 0.2s ease;
+
+  z-index: 900;
+}
+
+.project-image:hover::before {
+  opacity: 1;
+}
+
+.project-image:hover {
+  background-color: #d2d1ca;
+}
+
+
+/* Informations sous l'image */
+.project-info {
+  padding-top: 20px;
+}
+
+.project-info h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  font-size: 1.4rem;
+}
+
+.project-info p {
+  min-height: 50px;
+
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  color: #666666;
+
+  line-height: 1.5;
+}
+
+
+/* Technologies + GitHub */
+.project-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 15px;
+
+  font-family: Consolas, monospace;
+  font-size: 0.75rem;
+}
+
+.project-bottom span {
+  color: #777777;
+}
+
+.project-bottom a {
+  color: #181818;
+
+  text-decoration: none;
+
+  border-bottom: 1px solid #181818;
+}
+
+.project-bottom a:hover {
+  color: #6b705c;
+  border-color: #6b705c;
+}
+
+
+/* Projet en construction */
+.status {
+  color: #6b705c;
+}
+
+.project-coming {
+  background-color: #d8dacd;
+}
+
+
+/* Tablette / mobile */
+@media (max-width: 800px) {
+
+  .projects {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .projects h2 {
+    font-size: 2rem;
+  }
+
+  .projects-list {
+    flex-direction: column;
+
+    gap: 45px;
+  }
+
+  .project-card {
+    width: 100%;
+
+    margin-bottom: 0;
+  }
+
+  .project-image {
+    height: 170px;
+  }
+
+  .project-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 10px;
+  }
+
+
+  /* Pas d'effet hover sur téléphone */
+  .project-image:hover img {
+    position: static;
+
+    width: 100%;
+    height: 100%;
+
+    max-width: none;
+    max-height: none;
+
+    transform: none;
+
+    box-shadow: none;
+  }
+
+  .project-image::before {
+    display: none;
+  }
+}

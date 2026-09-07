@@ -1,0 +1,36 @@
+.footer {
+  width: 88%;
+  max-width: 1300px;
+
+  margin: auto;
+
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-top: 1px solid #d8d6cf;
+
+  color: #777777;
+
+  font-family: Consolas, monospace;
+  font-size: 0.75rem;
+}
+
+.footer p {
+  margin: 0;
+}
+
+
+/* Téléphone */
+@media (max-width: 600px) {
+
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 10px;
+  }
+}

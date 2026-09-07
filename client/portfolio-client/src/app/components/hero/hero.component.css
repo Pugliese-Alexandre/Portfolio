@@ -1,0 +1,177 @@
+.hero {
+  width: 88%;
+  max-width: 1300px;
+  min-height: 700px;
+
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.subtitle {
+  margin-bottom: 30px;
+
+  font-family: Consolas, monospace;
+  font-size: 0.9rem;
+}
+
+.hero h1 {
+  max-width: 900px;
+
+  margin: 0;
+
+  font-size: 5rem;
+  line-height: 1;
+
+  letter-spacing: -3px;
+}
+
+.hero h1 span {
+  display: block;
+
+  color: #6b705c;
+}
+
+.catchphrase {
+  margin-top: 35px;
+  margin-bottom: 0;
+
+  font-size: 1.3rem;
+}
+
+.description {
+  max-width: 600px;
+
+  margin-top: 18px;
+  margin-bottom: 0;
+
+  color: #666666;
+
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+
+/* Boutons */
+.buttons {
+  margin-top: 35px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 30px;
+}
+
+.main-button {
+  padding: 14px 22px;
+
+  background-color: #181818;
+  color: white;
+
+  text-decoration: none;
+  font-size: 0.9rem;
+
+  border-radius: 4px;
+}
+
+.main-button:hover {
+  background-color: #333333;
+}
+
+.github-link {
+  color: #181818;
+  text-decoration: none;
+
+  padding-bottom: 3px;
+
+  border-bottom: 1px solid #181818;
+}
+
+.github-link:hover {
+  color: #6b705c;
+  border-color: #6b705c;
+}
+
+
+/* Technologies */
+.technologies {
+  margin-top: 55px;
+
+  display: flex;
+
+  gap: 20px;
+
+  font-family: Consolas, monospace;
+  font-size: 0.8rem;
+
+  color: #777777;
+}
+
+.technologies span {
+  white-space: nowrap;
+}
+
+
+/* Tablette */
+@media (max-width: 900px) {
+
+  .hero {
+    min-height: 650px;
+  }
+
+  .hero h1 {
+    font-size: 4rem;
+  }
+
+  .technologies {
+    flex-wrap: wrap;
+  }
+}
+
+
+/* Téléphone */
+@media (max-width: 600px) {
+
+  .hero {
+    min-height: 600px;
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .subtitle {
+    font-size: 0.8rem;
+    line-height: 1.4;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+    line-height: 0.95;
+
+    letter-spacing: -2px;
+  }
+
+  .catchphrase {
+    font-size: 1rem;
+  }
+
+  .description {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 20px;
+  }
+
+  .technologies {
+    flex-wrap: wrap;
+
+    gap: 12px;
+  }
+}

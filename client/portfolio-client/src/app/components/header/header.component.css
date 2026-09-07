@@ -1,0 +1,58 @@
+.header {
+  width: 88%;
+  max-width: 1300px;
+  height: 100px;
+
+  margin: auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-bottom: 1px solid #d8d6cf;
+}
+
+.logo {
+  color: #181818;
+  text-decoration: none;
+
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  color: #181818;
+  text-decoration: none;
+
+  font-size: 0.9rem;
+}
+
+nav a:hover {
+  color: #6b705c;
+}
+
+
+/* Téléphone */
+@media (max-width: 600px) {
+
+  .header {
+    height: auto;
+
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 20px;
+  }
+
+  nav {
+    gap: 15px;
+  }
+}
